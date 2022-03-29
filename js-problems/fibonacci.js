@@ -9,4 +9,8 @@ function fibonacci(n){
     return fiboSeed;
 }
 
-console.log(fibonacci(5));
+// console.table(fibonacci());
+
+module.exports = {
+    fibonacci:fibonacci
+}
