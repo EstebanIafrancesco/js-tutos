@@ -16,3 +16,15 @@ const reversed = inputSeparated.map((el) =>{
 
 // print the string reversed
 console.log(reversed.join(sep));
+
+
+// Alternative way 
+
+// let input = 'hola como estás';
+// let strSep = Array.from(str);
+let strRev = input.split(' ').map( el => {
+    return Array.from(el).reverse().join('');
+}).join(' ');
+
+
+console.log(strRev);
